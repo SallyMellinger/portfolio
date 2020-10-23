@@ -117,11 +117,6 @@ body {
 margin-top: 15%;
 color: black;
 background: white;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: flex-start;
-align-content: flex-start;
 }
 
 #aboutMeHeader{
@@ -136,27 +131,46 @@ align-content: flex-start;
   font-size: 30px;
 }
 
-#headshot{
-    height: 300px;
-    width: auto;
-    margin-left: 20%;
-    margin-right:17%;
-    border-radius: 200px;
-    margin-top:10%;
-    margin-bottom: 10%;
-    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.50);
-    
-    
+.flexContainer{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ margin-bottom: 100px;
+
+
 }
+
+.headshotContainer{
+  order: 1;
+  height:300px;
+  margin-left: 40px;
+  margin-bottom:50px;
+  /* border-radius: 200px;
+  margin-top:10%;
+  margin-bottom: 10%;
+  box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.50); */
+
+}
+
+#headshot{
+  height: 300px;
+  width: auto;
+  border-radius: 200px;
+  box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.50);
+}
+.aboutMeContainer{
+  order: 2;
+  width: 75%;
+  margin-right: 50px;
+  margin-left: 40px;
+
+
+}
+
 p#aboutMe{
    font-family: 'Open Sans', sans-serif;
    font-size: 18px;
-}
-
-#aboutMeText{
-    width: 65%;
-    margin-left: 10%;
-    margin-bottom: 50px;
 }
 
 .normal{
